@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Moment from 'react-moment';
+import Button from './Button';
 
 const Clock = () => {
     //let time = new Date().toLocaleString();
@@ -20,6 +21,7 @@ const Clock = () => {
     return (
         <div className="container-fluid d-flex flex-row">
             <div className="col-md-4 mx-auto">
+                <Button />
                 <div className="display">
                     <Moment className="display-time" format='hh:mm:ss'>{time}</Moment>
                     <Moment className="display-date" format='ddd DD MMMM YYYY'>{date}</Moment>
